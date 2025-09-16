@@ -6,7 +6,7 @@ import { resolve } from 'path';
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   server: {
-    port: PORT || 3000,
+    port: 10000,
   },
   build: {
     outDir: 'dist',
