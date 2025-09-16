@@ -1,0 +1,34 @@
+{
+  "name": "site-personnel",
+  "version": "1.0.0",
+  "description": "Site personnel de Yann Blanc présentant son portfolio en cybersécurité et administration système",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
+    "deploy": "gh-pages -d dist -r https://github.com/yannblanc75/yannblanc75Web.github.io.git -b main",
+    "test-serve": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "system administration"
+  ],
+  "author": "Yann Blanc",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "gh-pages": "^6.3.0",
+    "serve": "^14.0.0",
+    "vite": "^6.2.5"
+  }
+}
