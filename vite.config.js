@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
   },
   // La base doit correspondre exactement à l'URL où le site est déployé
-  base: mode === 'development' ? '/' : '/yannblanc75Web.github.io/',
+  base: mode === 'development' ? '/' : '/yannblanc75.github.io/MyWebSite/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
